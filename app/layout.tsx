@@ -3,7 +3,7 @@ import { NextUIProvider } from '@nextui-org/react'
 import './globals.css'
 
 export const metadata: Metadata = {
-    title: 'Nextjs Boilerplate',
+    title: 'CVJM Ratzeburg',
 }
 
 export default function RootLayout({
