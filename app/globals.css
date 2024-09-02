@@ -5,19 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-}
-
 @layer base {
     * {
         @apply m-0 box-border list-none scroll-smooth p-0;
     }
 
     body {
-        @apply text-primary-1 font-commissioner min-h-screen;
+        @apply min-h-screen font-commissioner text-primary-1;
     }
 }
 
