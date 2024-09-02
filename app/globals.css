@@ -1,3 +1,6 @@
+/* This is the global css file */
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,11 +11,13 @@
     --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
+@layer base {
+    * {
+        @apply m-0 box-border list-none scroll-smooth p-0;
+    }
+
+    body {
+        @apply text-primary-1 font-commissioner min-h-screen;
     }
 }
 
