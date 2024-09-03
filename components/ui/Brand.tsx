@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Brand = () => {
     return (
-        <div className="flex flex-row gap-4">
+        <div className="flex w-full flex-row items-center gap-4">
             <Link href="/">
                 <Image
                     src="/static/img/logo/logo_transparent_bg.png"
@@ -12,7 +12,7 @@ const Brand = () => {
                     height={100}
                 />
             </Link>
-            <div className="hidden flex-col justify-center xl:flex">
+            <div className="flex w-full flex-col gap-1">
                 <p className="text-2xl font-light">CVJM Ratzeburg</p>
                 <p className="font-light">Freizeit- und Segelzentrum</p>
             </div>

@@ -11,13 +11,20 @@ import Link from 'next/link'
 
 const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {
     return (
-        <Dropdown type="listbox" className="border-r-0">
+        <Dropdown
+            type="listbox"
+            className="border-r-0"
+            placement="bottom-start"
+            shadow="sm"
+            radius="none"
+            backdrop="blur"
+        >
             <NavbarItem>
                 <DropdownTrigger>
                     <Button
                         radius="none"
                         disableRipple={true}
-                        className="bg-primary-2"
+                        className="bg-white text-lg font-semibold text-primary-2"
                     >
                         {menuItem.name}
                     </Button>
