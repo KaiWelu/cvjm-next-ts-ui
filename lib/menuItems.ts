@@ -1,7 +1,4 @@
 // this file contains static data for the menu items
-
-import path from 'path'
-
 export const MENU_ITEMS = [
     {
         name: 'Haus',

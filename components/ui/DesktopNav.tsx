@@ -17,31 +17,15 @@ import {
 } from '@nextui-org/react'
 
 const DesktopNav = () => {
-    console.log(MENU_ITEMS)
     return (
         <Navbar className="p-5 shadow-sm shadow-slate-300">
             <NavbarBrand>
                 <Brand />
             </NavbarBrand>
-            <NavbarContent className="justify-start">
-                <Dropdown type="listbox" className="border-r-0">
-                    <NavbarItem>
-                        <DropdownTrigger>
-                            <Button
-                                radius="none"
-                                disableRipple={true}
-                                className="bg-primary-2"
-                            >
-                                Button
-                            </Button>
-                        </DropdownTrigger>
-                    </NavbarItem>
-                    <DropdownMenu>
-                        <DropdownItem>Item 1</DropdownItem>
-                        <DropdownItem>Item 2</DropdownItem>
-                        <DropdownItem>Item 3</DropdownItem>
-                    </DropdownMenu>
-                </Dropdown>
+            <NavbarContent className="">
+                {MENU_ITEMS.map((item: MenuItem, index) => (
+                    <MenuItemDropdown key={index} menuItem={item} />
+                ))}
             </NavbarContent>
         </Navbar>
     )

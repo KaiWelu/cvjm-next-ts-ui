@@ -1,30 +1,34 @@
 import { MenuItem } from '@/lib/types'
+import {
+    Button,
+    Dropdown,
+    DropdownItem,
+    DropdownMenu,
+    DropdownTrigger,
+    NavbarItem,
+} from '@nextui-org/react'
 import Link from 'next/link'
-import React, { useState } from 'react'
 
-const MenuItemDropdown = ({
-    name,
-    path,
-    items,
-}: {
-    name: string
-    path: string
-    items: string[]
-}) => {
-    const [isDropDownShown, setIsDropDownShown] = useState(true)
+const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {
     return (
-        <>
-            <Link href={path}>
-                <button className="text-2xl font-semibold text-primary-2">
-                    {name}
-                </button>
-            </Link>
-            {isDropDownShown && (
-                <div className="bg-text-primary-2 absolute left-0 top-24 w-full bg-primary-2 text-white">
-                    Hallo
-                </div>
-            )}
-        </>
+        <Dropdown type="listbox" className="border-r-0">
+            <NavbarItem>
+                <DropdownTrigger>
+                    <Button
+                        radius="none"
+                        disableRipple={true}
+                        className="bg-primary-2"
+                    >
+                        {menuItem.name}
+                    </Button>
+                </DropdownTrigger>
+            </NavbarItem>
+            <DropdownMenu>
+                {menuItem.items.map((item: string, index: number) => (
+                    <DropdownItem key={index}>{item}</DropdownItem>
+                ))}
+            </DropdownMenu>
+        </Dropdown>
     )
 }
 
