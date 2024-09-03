@@ -22,12 +22,9 @@ import Link from 'next/link'
 
 const DesktopNav = () => {
     return (
-        <Navbar className="justify-start p-3 shadow-sm shadow-slate-300">
-            {/*  <NavbarContent justify="start">
-                <Brand />
-            </NavbarContent> */}
-            <NavbarBrand>
-                <Link href="/" className="flex flex-row">
+        <Navbar className="justify-start border-b-5 border-primary-2 p-3 shadow-sm shadow-slate-300">
+            <NavbarBrand className="justify-center">
+                <Link href="/" className="">
                     <Image
                         src="/static/img/logo/logo_full_color.png"
                         alt="CVJM Logo"
@@ -40,7 +37,7 @@ const DesktopNav = () => {
                     <p className="font-light">Freizeit- und Segelzentrum</p>
                 </div> */}
             </NavbarBrand>
-            <NavbarContent justify="end">
+            <NavbarContent justify="center">
                 {MENU_ITEMS.map((item: MenuItem, index) => (
                     <MenuItemDropdown key={index} menuItem={item} />
                 ))}
@@ -57,8 +54,8 @@ const DesktopNav = () => {
                     <Image
                         src={instaIcon}
                         alt="Instagram Logo"
-                        height={35}
-                        width={35}
+                        height={30}
+                        width={30}
                     />
                 </a>
                 <a
@@ -68,8 +65,8 @@ const DesktopNav = () => {
                     <Image
                         src={facebookIcon}
                         alt="Instagram Logo"
-                        height={35}
-                        width={35}
+                        height={30}
+                        width={30}
                     />
                 </a>
             </NavbarContent>

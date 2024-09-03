@@ -23,6 +23,20 @@ const config: Config = {
             },
         },
     },
-    plugins: [nextui()],
+    plugins: [
+        nextui({
+            themes: {
+                light: {
+                    colors: {
+                        danger: {
+                            foreground: '#ffffff',
+                            background: '#9f0524',
+                            DEFAULT: '#9f0524',
+                        },
+                    },
+                },
+            },
+        }),
+    ],
 }
 export default config
