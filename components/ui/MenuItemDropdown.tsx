@@ -7,7 +7,6 @@ import {
     DropdownTrigger,
     NavbarItem,
 } from '@nextui-org/react'
-import Link from 'next/link'
 
 const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {
     return (
@@ -31,12 +30,7 @@ const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {
             </NavbarItem>
             <DropdownMenu color="danger">
                 {menuItem.items.map((item: string, index: number) => (
-                    <DropdownItem
-                        key={index}
-                        href="/haus"
-                        /* className="text-primary-2" */
-                        /* variant="light" */
-                    >
+                    <DropdownItem key={index} href="/haus">
                         {item}
                     </DropdownItem>
                 ))}

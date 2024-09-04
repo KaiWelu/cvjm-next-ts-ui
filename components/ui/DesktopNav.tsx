@@ -32,10 +32,6 @@ const DesktopNav = () => {
                         height={100}
                     />
                 </Link>
-                {/*  <div className="flex w-full flex-col gap-1">
-                    <p className="text-2xl font-light">CVJM Ratzeburg</p>
-                    <p className="font-light">Freizeit- und Segelzentrum</p>
-                </div> */}
             </NavbarBrand>
             <NavbarContent justify="center">
                 {MENU_ITEMS.map((item: MenuItem, index) => (
