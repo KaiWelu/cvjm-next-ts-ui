@@ -45,12 +45,17 @@ const MobileNav = () => {
                             key={item.name}
                             title={item.name}
                             classNames={{
-                                title: 'text-primary-2',
+                                title: 'text-primary-2 font-semibold',
                             }}
                         >
                             <div className="flex flex-col gap-2">
                                 {item.items.map((subitem) => (
-                                    <Button key={subitem}>{subitem}</Button>
+                                    <Button
+                                        key={subitem}
+                                        className="justify-start border-none bg-transparent text-primary-2"
+                                    >
+                                        {subitem}
+                                    </Button>
                                 ))}
                             </div>
                         </AccordionItem>
