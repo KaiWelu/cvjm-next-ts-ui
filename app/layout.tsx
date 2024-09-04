@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
 import { NextUIProvider } from '@nextui-org/react'
 import './globals.css'
+import Footer from '@/components/ui/Footer'
+
+import NavBarWrapper from '@/components/ui/NavBarWrapper'
 
 export const metadata: Metadata = {
-    title: 'Nextjs Boilerplate',
+    title: 'CVJM Ratzeburg',
 }
 
 export default function RootLayout({
@@ -14,7 +17,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                <NextUIProvider>{children}</NextUIProvider>
+                <NextUIProvider>
+                    <NavBarWrapper />
+                    {children}
+                    <Footer />
+                </NextUIProvider>
             </body>
         </html>
     )
