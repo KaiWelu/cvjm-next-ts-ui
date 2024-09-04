@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import Brand from './Brand'
 import { MENU_ITEMS } from '../../lib/menuItems'
 import { MenuItem } from '@/lib/types'
 import MenuItemDropdown from './MenuItemDropdown'
