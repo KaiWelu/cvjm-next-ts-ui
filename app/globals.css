@@ -13,6 +13,19 @@
     body {
         @apply min-h-screen font-commissioner text-primary-1;
     }
+
+    .top-headline {
+        @apply mb-2 text-3xl font-bold text-primary-2;
+    }
+    .content-body {
+        @apply mt-4 flex flex-col items-center p-5;
+    }
+    .section-wrapper {
+        @apply w-3/4;
+    }
+    .text-body {
+        @apply flex flex-col gap-2 text-lg font-light;
+    }
 }
 
 @layer utilities {

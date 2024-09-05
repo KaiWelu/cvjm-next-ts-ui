@@ -2,12 +2,10 @@ import React from 'react'
 
 const page = () => {
     return (
-        <main className="mt-4 flex flex-col items-center p-5">
-            <section className="w-3/4">
-                <h1 className="mb-2 text-3xl font-bold text-primary-2">
-                    Über uns
-                </h1>
-                <div className="flex flex-col gap-2 text-lg font-light">
+        <main className="content-body">
+            <section className="section-wrapper">
+                <h1 className="top-headline">Über uns</h1>
+                <div className="text-body">
                     <p>
                         Ende der sechziger Jahre wurde die Ruderakademie in
                         Ratzeburg gebaut, ein großer Teil davon wurde das
