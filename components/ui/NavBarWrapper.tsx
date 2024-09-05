@@ -13,8 +13,8 @@ import Image from 'next/image'
 const NavBarWrapper = () => {
     return (
         <>
-            <MobileNav />
-            {/* <DesktopNav /> */}
+            {/* <MobileNav /> */}
+            <DesktopNav />
         </>
     )
 }

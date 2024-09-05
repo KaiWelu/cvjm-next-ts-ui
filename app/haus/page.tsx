@@ -2,12 +2,73 @@ import React from 'react'
 
 const page = () => {
     return (
-        <div className="h-svh">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima
-            dignissimos reiciendis iusto modi dolorem recusandae alias similique
-            maxime expedita voluptate fugit, eius adipisci nulla, vitae
-            necessitatibus ut consequuntur. Atque!
-        </div>
+        <main className="mt-4 flex flex-col items-center p-5">
+            <section className="w-3/4">
+                <h1 className="mb-2 text-3xl font-bold text-primary-2">
+                    Über uns
+                </h1>
+                <div className="flex flex-col gap-2 text-lg font-light">
+                    <p>
+                        Ende der sechziger Jahre wurde die Ruderakademie in
+                        Ratzeburg gebaut, ein großer Teil davon wurde das
+                        heutige CVJM Freizeit- und Segelzentrum.
+                    </p>
+                    <p>
+                        Seit dem 01. August 2007 wird das Segelzentrum unter der
+                        Regie der gemeinnützigen GmbH CVJM Freizeit- und
+                        Segelzentrum Ratzeburg geführt. Das Haus ist Mitglied im
+                        CVJM Brückenschlag Nord-Ost, im Deutschen Seglerverband
+                        (DSV) und im Verband Deutscher Sportbootschulen (VDS).
+                    </p>
+                    <p>
+                        Das CVJM Freizeit- und Segelzentrum in Ratzeburg ist
+                        eine Einrichtung für die Jugendarbeit, die Alternativen
+                        zu den üblichen kommerziellen gesellschaftlichen
+                        Freizeitbeschäftigungsmöglichkeiten anbietet.
+                    </p>
+                    <p>
+                        Kinder, Jugendliche, junge Erwachsene und Menschen mit
+                        Behinderungen werden gleichermaßen gefördert.
+                    </p>
+                    <p>
+                        So bieten wir als anerkannter Träger der freien
+                        Jugendhilfe mit unseren ehrenamtlichen Mitarbeitern
+                        (Segellehrern und Jugendgruppenleitern) eine
+                        Jugendarbeit an, die überwiegend auf dem Wasser
+                        stattfindet.
+                    </p>
+                    <p>
+                        Unsere Programme beinhalten pädagogische,
+                        therapeutische, aber auch sportliche Komponenten. Der
+                        Segelsport dient bei unseren Programmen dazu, Menschen
+                        in vorgegebenen Situationen, manchmal auch in
+                        Extremsituationen, auf Teamarbeit, Gemeinschaft,
+                        Rücksicht und Vorsorge zu trainieren.
+                    </p>
+                    <p>
+                        In den integrativen Programmen für Menschen mit
+                        Behinderungen wollen wir den Segelsport nutzen, um
+                        Menschen mit und ohne Behinderungen die Gelegenheit zu
+                        geben, ohne Ausgrenzungen gleiche Erfahrungen zu machen.
+                        Die hierfür erforderliche Betreuung leisten ebenfalls
+                        ausgebildete ehrenamtliche Mitarbeiter.{' '}
+                    </p>
+                    <p>
+                        Zudem ist es das Ziel unserer Arbeit, Menschen
+                        unterschiedlicher Herkunft und Religion
+                        zusammenzubringen. Hierfür nutzen wir die vielfältigen
+                        Möglichkeiten der sportlichen Aktivität auf dem Wasser.
+                        Das CVJM Freizeit- und Segelzentrum bietet sein Programm
+                        im Rahmen einer umfassenden Betreuung an und ist
+                        ausschließlich gemeinnützig tätig.{' '}
+                    </p>
+                    <p>
+                        Der Förderverein „Segeln im CVJM e.V.“ unterstützt diese
+                        Programme und fördert in einem hohen Maße das Ehrenamt.
+                    </p>
+                </div>
+            </section>
+        </main>
     )
 }
 
