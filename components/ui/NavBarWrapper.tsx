@@ -1,5 +1,5 @@
 import MobileNav from './MobileNav'
-import DesktopNav from './DesktopNav'
+import DesktopNavi from './DesktopNavi'
 import {
     Navbar,
     NavbarBrand,
@@ -14,7 +14,7 @@ const NavBarWrapper = () => {
     return (
         <>
             {/* <MobileNav /> */}
-            <DesktopNav />
+            <DesktopNavi />
         </>
     )
 }

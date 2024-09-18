@@ -1,46 +1,22 @@
 'use client'
-import React from 'react'
-import { MENU_ITEMS } from '../../lib/menuItems'
-import { MenuItem } from '@/lib/types'
+import Image from 'next/image'
+import Brand from './Brand'
 import MenuItemDropdown from './MenuItemDropdown'
-import {
-    Button,
-    Dropdown,
-    DropdownItem,
-    DropdownMenu,
-    DropdownTrigger,
-    Navbar,
-    NavbarBrand,
-    NavbarContent,
-    NavbarItem,
-} from '@nextui-org/react'
+import { MENU_ITEMS } from '@/lib/menuItems'
+import { MenuItem } from '@/lib/types'
 import instaIcon from '/public/static/img/icons/icons8-instagram-red.svg'
 import facebookIcon from '/public/static/img/icons/icons8-facebook-red.svg'
-import Image from 'next/image'
-import Link from 'next/link'
 
-const DesktopNav = () => {
+const DesktopNavi = () => {
     return (
-        <Navbar className="justify-start border-b-5 border-primary-2 p-3 shadow-sm shadow-slate-300">
-            <NavbarBrand className="justify-center">
-                <Link href="/" className="">
-                    <Image
-                        src="/static/img/logo/logo_full_color.png"
-                        alt="CVJM Logo"
-                        width={100}
-                        height={100}
-                    />
-                </Link>
-            </NavbarBrand>
-            <NavbarContent justify="center">
+        <nav className="sticky top-0 flex flex-row items-center justify-start gap-8 border-b-5 border-primary-2 bg-background p-3 shadow-sm shadow-slate-300">
+            <Brand />
+            <section className="w-auto">
                 {MENU_ITEMS.map((item: MenuItem, index) => (
                     <MenuItemDropdown key={index} menuItem={item} />
                 ))}
-            </NavbarContent>
-            <NavbarContent
-                className="flex flex-row items-center gap-2"
-                justify="end"
-            >
+            </section>
+            <section className="flex flex-row items-center gap-2">
                 <a
                     href={'https://www.instagram.com/cvjmratzeburg/'}
                     target="_blank"
@@ -64,8 +40,9 @@ const DesktopNav = () => {
                         width={30}
                     />
                 </a>
-            </NavbarContent>
-        </Navbar>
+            </section>
+        </nav>
     )
 }
-export default DesktopNav
+
+export default DesktopNavi
