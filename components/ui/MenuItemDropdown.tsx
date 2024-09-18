@@ -5,7 +5,6 @@ import {
     DropdownItem,
     DropdownMenu,
     DropdownTrigger,
-    NavbarItem,
 } from '@nextui-org/react'
 
 const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {

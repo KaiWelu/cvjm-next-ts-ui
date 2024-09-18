@@ -14,13 +14,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { MENU_ITEMS } from '@/lib/menuItems'
+import instaIcon from '/public/static/img/icons/icons8-instagram-red.svg'
+import facebookIcon from '/public/static/img/icons/icons8-facebook-red.svg'
+import Brand from './Brand'
 
 const MobileNav = () => {
     return (
-        <Navbar className="ml-0 justify-start border-b-5 border-primary-2 py-3 shadow-sm shadow-slate-300">
+        <Navbar className="ml-0 justify-start border-b-5 border-primary-2 bg-background py-5 shadow-sm shadow-slate-300">
             <NavbarContent>
-                <NavbarBrand>
-                    <Link href="/" className="">
+                <NavbarBrand className="flex flex-row justify-start">
+                    <Link href="/">
                         <Image
                             src="/static/img/logo/logo_full_color.png"
                             alt="CVJM Logo"
@@ -29,6 +32,32 @@ const MobileNav = () => {
                         />
                     </Link>
                 </NavbarBrand>
+                <section className="flex flex-row items-center gap-2">
+                    <a
+                        href={'https://www.instagram.com/cvjmratzeburg/'}
+                        target="_blank"
+                        className="block"
+                    >
+                        <Image
+                            src={instaIcon}
+                            alt="Instagram Logo"
+                            height={30}
+                            width={30}
+                        />
+                    </a>
+                    <a
+                        href="https://www.facebook.com/cvjm.ratzeburg"
+                        target="_blank"
+                    >
+                        <Image
+                            src={facebookIcon}
+                            alt="Instagram Logo"
+                            height={30}
+                            width={30}
+                        />
+                    </a>
+                </section>
+
                 <NavbarMenuToggle
                 /* aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} */
                 />
