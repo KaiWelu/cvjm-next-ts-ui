@@ -1,3 +1,11 @@
+'use client'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper/modules'
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/scrollbar'
+import Image from 'next/image'
+
 const page = () => {
     return (
         <main className="mt-5 flex w-full justify-center p-5">
@@ -18,6 +26,29 @@ const page = () => {
                         Gruppenprozess - ganz nach dem Motto
                     </p>
                 </section>
+                <div>
+                    <Swiper
+                        pagination={true}
+                        modules={[Pagination]}
+                        className="h-96 w-full rounded-lg"
+                    >
+                        <SwiperSlide>
+                            <Image
+                                alt="sailing"
+                                src="/static/img/water/cvjm_impression_1.jpg"
+                                fill={true}
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide>Slide 2</SwiperSlide>
+                        <SwiperSlide>Slide 3</SwiperSlide>
+                        <SwiperSlide>Slide 4</SwiperSlide>
+                        <SwiperSlide>Slide 5</SwiperSlide>
+                        <SwiperSlide>Slide 6</SwiperSlide>
+                        <SwiperSlide>Slide 7</SwiperSlide>
+                        <SwiperSlide>Slide 8</SwiperSlide>
+                        <SwiperSlide>Slide 9</SwiperSlide>
+                    </Swiper>
+                </div>
                 <section>
                     <h2>Kursangebot</h2>
                     <p>
