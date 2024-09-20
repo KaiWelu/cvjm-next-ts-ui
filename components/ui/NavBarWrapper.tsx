@@ -4,7 +4,7 @@ import DesktopNavi from './DesktopNavi'
 const NavBarWrapper = () => {
     return (
         <>
-            {/* <MobileNav /> */}
+            <MobileNav />
             <DesktopNavi />
         </>
     )

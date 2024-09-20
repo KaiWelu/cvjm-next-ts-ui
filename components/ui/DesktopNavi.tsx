@@ -9,7 +9,7 @@ import facebookIcon from '/public/static/img/icons/icons8-facebook-red.svg'
 
 const DesktopNavi = () => {
     return (
-        <nav className="sticky top-0 flex flex-row items-center justify-evenly gap-0 border-b-5 border-primary-2 bg-background p-3 shadow-sm shadow-slate-300">
+        <nav className="sticky top-0 hidden flex-row items-center justify-evenly gap-0 border-b-5 border-primary-2 bg-background p-3 shadow-sm shadow-slate-300 lg:flex">
             <Brand />
             <section className="w-auto">
                 {MENU_ITEMS.map((item: MenuItem, index) => (

@@ -20,7 +20,7 @@ import Brand from './Brand'
 
 const MobileNav = () => {
     return (
-        <Navbar className="ml-0 justify-start border-b-5 border-primary-2 bg-background py-5 shadow-sm shadow-slate-300">
+        <Navbar className="ml-0 justify-start border-b-5 border-primary-2 bg-background py-5 shadow-sm shadow-slate-300 lg:hidden">
             <NavbarContent>
                 <NavbarBrand className="flex flex-row justify-start">
                     <Link href="/">

@@ -1,7 +1,7 @@
 const page = () => {
     return (
-        <main className="flex w-full justify-center p-5">
-            <div className="prose prose-md prose-headings:text-primary-2">
+        <main className="mt-5 flex w-full justify-center p-5">
+            <div className="prose prose-sm md:prose-lg prose-headings:text-primary-2 max-w-none lg:w-3/4">
                 <section>
                     <h1>Wassersportprogramm</h1>
                     <p className="lead">
@@ -19,23 +19,11 @@ const page = () => {
                     </p>
                 </section>
                 <section>
-                    {/*  <h2>
-                        &quot;Gemeinsam in einem Boot das Ziel erreichen&quot;
-                    </h2> */}
                     <h2>Kursangebot</h2>
-                    <p className="text-xl">
+                    <p>
                         Wir bieten folgende Programme unter Anleitung erfahrener
                         Segel- und Surflehrer:
                     </p>
-                    {/*     <ul className="list-outside list-disc marker:size-6 marker:p-5 marker:text-danger-foreground">
-                        <li className="">Segelgrundkurs</li>
-                        <li>Segeln für Fortgeschrittene</li>
-                        <li>Barrierefreies Segeln</li>
-                        <li>Mannschaftskuttersegeln</li>
-                        <li>Surfgrundkurs</li>
-                        <li>Kanuprogramm</li>
-                        <li>Stand Up Paddling</li>
-                    </ul> */}
                 </section>
                 <section>
                     <h3>Segelgrundkurs und Segelgrundschein</h3>
