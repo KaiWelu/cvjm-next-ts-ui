@@ -9,7 +9,7 @@ import Image from 'next/image'
 const page = () => {
     return (
         <main className="mt-5 flex w-full justify-center p-5">
-            <div className="prose prose-sm md:prose-lg prose-headings:text-primary-2 max-w-none lg:w-3/4">
+            <div className="prose prose-sm max-w-none md:prose-lg prose-headings:text-primary-2 lg:w-3/4">
                 <section>
                     <h1>Wassersportprogramm</h1>
                     <p className="lead">
@@ -42,11 +42,6 @@ const page = () => {
                         <SwiperSlide>Slide 2</SwiperSlide>
                         <SwiperSlide>Slide 3</SwiperSlide>
                         <SwiperSlide>Slide 4</SwiperSlide>
-                        <SwiperSlide>Slide 5</SwiperSlide>
-                        <SwiperSlide>Slide 6</SwiperSlide>
-                        <SwiperSlide>Slide 7</SwiperSlide>
-                        <SwiperSlide>Slide 8</SwiperSlide>
-                        <SwiperSlide>Slide 9</SwiperSlide>
                     </Swiper>
                 </div>
                 <section>
