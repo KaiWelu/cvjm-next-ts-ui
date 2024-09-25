@@ -1,10 +1,8 @@
 'use client'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper/modules'
-// Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/scrollbar'
+
 import Image from 'next/image'
+// if you import local images nextjs will autofill the ratio and w+h
+import waterPic from '@/public/static/img/water/cvjm_impression_1.jpg'
 
 const page = () => {
     return (
@@ -27,22 +25,7 @@ const page = () => {
                     </p>
                 </section>
                 <div>
-                    <Swiper
-                        pagination={true}
-                        modules={[Pagination]}
-                        className="h-96 w-full rounded-lg"
-                    >
-                        <SwiperSlide>
-                            <Image
-                                alt="sailing"
-                                src="/static/img/water/cvjm_impression_1.jpg"
-                                fill={true}
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>Slide 2</SwiperSlide>
-                        <SwiperSlide>Slide 3</SwiperSlide>
-                        <SwiperSlide>Slide 4</SwiperSlide>
-                    </Swiper>
+                    <Image alt="sailing" src={waterPic} />
                 </div>
                 <section>
                     <h2>Kursangebot</h2>

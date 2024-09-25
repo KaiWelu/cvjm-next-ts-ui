@@ -8,7 +8,7 @@ This is a project for the CVJM Ratzeburg
 -   [Tailwind CSS](https://tailwindcss.com/docs/installation)
 -   [Tailwind x Prettier](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
 -   [Playwright](https://playwright.dev/docs/intro#installation)
--   [Vitest]()
+-   [Vitest](https://vitest.dev/guide/)
 
 ## How to use
 

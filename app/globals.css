@@ -32,4 +32,13 @@
     .text-balance {
         text-wrap: balance;
     }
+    .normalSwiper {
+        /* this is for the bullets */
+        --swiper-pagination-color: blue;
+        --swiper-pagination-bottom: 30px;
+        --swiper-pagination-bullet-size: 20px;
+        /* this is for the side navigation */
+        --swiper-navigation-color: white;
+        --swiper-navigation-top-offset: 50%;
+    }
 }
