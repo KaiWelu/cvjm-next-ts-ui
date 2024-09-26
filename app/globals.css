@@ -14,17 +14,20 @@
         @apply min-h-screen font-commissioner text-primary-1;
     }
 
-    .top-headline {
-        @apply mb-2 text-3xl font-bold text-primary-2;
+    .swiper {
+        width: 100%;
+        height: 100%;
     }
-    .content-body {
-        @apply mt-4 flex flex-col items-center p-5;
-    }
-    .section-wrapper {
-        @apply w-3/4;
-    }
-    .text-body {
-        @apply flex flex-col gap-2 text-lg font-light;
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -32,13 +35,8 @@
     .text-balance {
         text-wrap: balance;
     }
-    .normalSwiper {
-        /* this is for the bullets */
-        --swiper-pagination-color: blue;
-        --swiper-pagination-bottom: 30px;
-        --swiper-pagination-bullet-size: 20px;
-        /* this is for the side navigation */
-        --swiper-navigation-color: white;
-        --swiper-navigation-top-offset: 50%;
+
+    .scroll-padding {
+        scroll-margin-top: 8rem;
     }
 }

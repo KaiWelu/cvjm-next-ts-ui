@@ -9,6 +9,7 @@ This is a project for the CVJM Ratzeburg
 -   [Tailwind x Prettier](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
 -   [Playwright](https://playwright.dev/docs/intro#installation)
 -   [Vitest](https://vitest.dev/guide/)
+-   [Splide.js](https://splidejs.com/guides/getting-started/)
 
 ## How to use
 

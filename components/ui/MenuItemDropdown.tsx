@@ -1,3 +1,4 @@
+'use client'
 import { MenuItem } from '@/lib/types'
 import {
     Button,
@@ -6,6 +7,7 @@ import {
     DropdownMenu,
     DropdownTrigger,
 } from '@nextui-org/react'
+import Link from 'next/link'
 
 const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {
     return (
@@ -28,8 +30,8 @@ const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {
 
             <DropdownMenu color="danger">
                 {menuItem.items.map((item: string, index: number) => (
-                    <DropdownItem key={index} href="/haus">
-                        {item}
+                    <DropdownItem key={index}>
+                        <Link href="/haus#tagen">{item}</Link>
                     </DropdownItem>
                 ))}
             </DropdownMenu>
