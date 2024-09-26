@@ -3,8 +3,8 @@
 const page = () => {
     return (
         <main className="mt-5 flex w-full justify-center p-5">
-            <div className="prose prose-sm max-w-none md:prose-lg prose-headings:text-primary-2 lg:w-3/4">
-                <section>
+            <div className="prose-md prose max-w-none md:prose-lg prose-headings:text-primary-2 lg:w-3/4">
+                <section id="uberuns" className="scroll-padding">
                     <h1>Über uns</h1>
                     <p>
                         Ende der sechziger Jahre wurde das heutige CVJM
@@ -62,7 +62,7 @@ const page = () => {
                         Ehrenamt.
                     </p>
                 </section>
-                <section>
+                <section id="ausstattung" className="scroll-padding">
                     <h2>Ausstattung des Hauses</h2>
                     <p>
                         Unser Haus verfügt über vier Schlaftrakte mit insgesamt
@@ -107,7 +107,7 @@ const page = () => {
                         einmalige Lage und Atmosphäre.
                     </p>
                 </section>
-                <section id="tagen" className="scroll-padding">
+                <section id="tagungen" className="scroll-padding">
                     <h2>Tagen und Erholen</h2>
                     <p>
                         Neben den Wassersportaktivitäten bietet sich unser Haus
@@ -137,7 +137,7 @@ const page = () => {
                         und genutzt werden.
                     </p>
                 </section>
-                <section>
+                <section id="anfahrt" className="scroll-padding">
                     <h2>Anfahrt</h2>
                     <p>
                         Ratzeburg liegt zentral zwischen den Städten Hamburg,
@@ -153,7 +153,7 @@ const page = () => {
                         Verkehrsverbundes (hvv.de) abrufen.
                     </p>
                 </section>
-                <section>
+                <section id="kontakt" className="scroll-padding">
                     <h2>Kontakt</h2>
                     <p>
                         Sie möchten eine Freizeit bei uns buchen? <br /> Sie

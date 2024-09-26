@@ -31,7 +31,9 @@ const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {
             <DropdownMenu color="danger">
                 {menuItem.items.map((item: string, index: number) => (
                     <DropdownItem key={index}>
-                        <Link href="/haus#tagen">{item}</Link>
+                        <Link href={menuItem.path + '#' + menuItem.ids[index]}>
+                            {item}
+                        </Link>
                     </DropdownItem>
                 ))}
             </DropdownMenu>

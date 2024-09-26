@@ -7,16 +7,14 @@ import {
     NavbarBrand,
     NavbarContent,
     NavbarMenu,
-    NavbarMenuItem,
     NavbarMenuToggle,
 } from '@nextui-org/react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+
 import { MENU_ITEMS } from '@/lib/menuItems'
 import instaIcon from '/public/static/img/icons/icons8-instagram-red.svg'
 import facebookIcon from '/public/static/img/icons/icons8-facebook-red.svg'
-import Brand from './Brand'
 
 const MobileNav = () => {
     return (
@@ -65,7 +63,7 @@ const MobileNav = () => {
 
             <NavbarMenu className="mt-8">
                 <Accordion variant="light">
-                    {MENU_ITEMS.map((item, index) => (
+                    {MENU_ITEMS.map((item) => (
                         <AccordionItem
                             key={item.name}
                             title={item.name}
@@ -74,13 +72,15 @@ const MobileNav = () => {
                             }}
                         >
                             <div className="flex flex-col gap-2">
-                                {item.items.map((subitem) => (
-                                    <Button
-                                        key={subitem}
-                                        className="justify-start border-none bg-transparent text-primary-2"
+                                {item.items.map((subItem, index) => (
+                                    <Link
+                                        href={item.path + '#' + item.ids[index]}
+                                        key={subItem}
                                     >
-                                        {subitem}
-                                    </Button>
+                                        <Button className="justify-start border-none bg-transparent text-primary-2">
+                                            {subItem}
+                                        </Button>
+                                    </Link>
                                 ))}
                             </div>
                         </AccordionItem>
