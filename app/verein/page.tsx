@@ -5,7 +5,7 @@ const page = () => {
         <main className="mt-5 flex w-full justify-center p-5">
             <div className="prose-md prose max-w-none md:prose-lg prose-headings:text-primary-2 lg:w-3/4">
                 <section id="uberuns" className="scroll-padding">
-                    <h2>Über uns</h2>
+                    <h1>Über uns</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Iure accusantium saepe, consectetur, optio itaque

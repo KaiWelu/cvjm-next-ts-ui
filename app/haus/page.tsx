@@ -152,6 +152,14 @@ const page = () => {
                         der Deutschen Bahn AG (bahn.de) oder des Hamburger
                         Verkehrsverbundes (hvv.de) abrufen.
                     </p>
+                    <div className="mt-4 min-h-96 w-full md:p-2">
+                        <iframe
+                            /* width="425"
+                            height="350" */
+                            className="min-h-96 w-full"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=10.71596145629883%2C53.68105196776552%2C10.829257965087892%2C53.72424021138403&amp;layer=mapnik&amp;marker=53.70265162977651%2C10.77260971069336"
+                        ></iframe>
+                    </div>
                 </section>
                 <section id="kontakt" className="scroll-padding">
                     <h2>Kontakt</h2>
