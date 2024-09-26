@@ -63,11 +63,7 @@ const MobileNav = () => {
                 />
             </NavbarContent>
 
-            <NavbarMenu className="mt-5">
-                {/*   <NavbarMenuItem>Hallo</NavbarMenuItem>
-                <NavbarMenuItem>Hallo</NavbarMenuItem>
-                <NavbarMenuItem>Hallo</NavbarMenuItem>
-                <NavbarMenuItem>Hallo</NavbarMenuItem> */}
+            <NavbarMenu className="mt-8">
                 <Accordion variant="light">
                     {MENU_ITEMS.map((item, index) => (
                         <AccordionItem
