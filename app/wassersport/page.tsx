@@ -6,7 +6,7 @@ const page = () => {
     return (
         <main className="mt-5 flex w-full justify-center p-5">
             <div className="prose prose-sm max-w-none md:prose-lg prose-headings:text-primary-2 lg:w-3/4">
-                <section>
+                <section id="wassersportprogramm" className="scroll-padding">
                     <h1>Wassersportprogramm</h1>
                     <p className="lead">
                         Das CVJM Freizeit- und Segelzentrum steht für die Arbeit
@@ -23,7 +23,8 @@ const page = () => {
                     </p>
                 </section>
                 <SampleCarousel />
-                <section>
+
+                <section id="kurse" className="scroll-padding">
                     <h2>Kursangebot</h2>
                     <p>
                         Wir bieten folgende Programme unter Anleitung erfahrener

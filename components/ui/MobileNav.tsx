@@ -77,7 +77,7 @@ const MobileNav = () => {
                                         href={item.path + '#' + item.ids[index]}
                                         key={subItem}
                                     >
-                                        <Button className="justify-start border-none bg-transparent text-primary-2">
+                                        <Button className="justify-start border-none bg-transparent text-lg text-primary-2">
                                             {subItem}
                                         </Button>
                                     </Link>

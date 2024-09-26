@@ -9,16 +9,23 @@ import '@splidejs/react-splide/css'
 
 const SampleCarousel = () => {
     return (
-        <section className="not-prose">
-            <Splide aria-label="My Favorite Images">
-                <SplideSlide className="flex justify-center">
-                    <Image alt="sailing" src={waterPic} />
-                </SplideSlide>
-                <SplideSlide className="flex justify-center">
-                    <Image alt="sailing" src={waterPic} />
-                </SplideSlide>
-            </Splide>
-        </section>
+        <Splide aria-label="My Favorite Images">
+            <SplideSlide className="flex justify-center">
+                <Image alt="sailing" src={waterPic} />
+            </SplideSlide>
+            <SplideSlide className="flex justify-center">
+                <Image alt="sailing" src={waterPic} />
+            </SplideSlide>
+            <SplideSlide className="flex justify-center">
+                <Image alt="sailing" src={waterPic} />
+            </SplideSlide>
+            <SplideSlide className="flex justify-center">
+                <Image alt="sailing" src={waterPic} />
+            </SplideSlide>
+            <SplideSlide className="flex justify-center">
+                <Image alt="sailing" src={waterPic} />
+            </SplideSlide>
+        </Splide>
     )
 }
 

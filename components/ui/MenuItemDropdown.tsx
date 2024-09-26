@@ -7,7 +7,6 @@ import {
     DropdownMenu,
     DropdownTrigger,
 } from '@nextui-org/react'
-import Link from 'next/link'
 
 const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {
     return (
@@ -30,10 +29,11 @@ const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {
 
             <DropdownMenu color="danger">
                 {menuItem.items.map((item: string, index: number) => (
-                    <DropdownItem key={index}>
-                        <Link href={menuItem.path + '#' + menuItem.ids[index]}>
-                            {item}
-                        </Link>
+                    <DropdownItem
+                        href={menuItem.path + '#' + menuItem.ids[index]}
+                        key={index}
+                    >
+                        {item}
                     </DropdownItem>
                 ))}
             </DropdownMenu>
