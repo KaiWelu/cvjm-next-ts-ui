@@ -1,28 +1,11 @@
 'use client'
 
-import Image from 'next/image'
-// if you import local images nextjs will autofill the ratio and w+h
-import waterPic from '@/public/static/img/water/cvjm_impression_1.jpg'
-import { Splide, SplideSlide } from '@splidejs/react-splide'
-// or only core styles
-import '@splidejs/react-splide/css/core'
-// Default theme
-import '@splidejs/react-splide/css'
+import SampleCarousel from '@/components/carousels/SampleCarousel'
 
 const page = () => {
     return (
         <main className="mt-5 flex w-full justify-center p-5">
             <div className="prose prose-sm max-w-none md:prose-lg prose-headings:text-primary-2 lg:w-3/4">
-                <section className="not-prose">
-                    <Splide aria-label="My Favorite Images">
-                        <SplideSlide className="flex justify-center">
-                            <Image alt="sailing" src={waterPic} />
-                        </SplideSlide>
-                        <SplideSlide>
-                            <Image alt="sailing" src={waterPic} />
-                        </SplideSlide>
-                    </Splide>
-                </section>
                 <section>
                     <h1>Wassersportprogramm</h1>
                     <p className="lead">
@@ -39,9 +22,7 @@ const page = () => {
                         Gruppenprozess - ganz nach dem Motto
                     </p>
                 </section>
-                <div>
-                    <Image alt="sailing" src={waterPic} />
-                </div>
+                <SampleCarousel />
                 <section>
                     <h2>Kursangebot</h2>
                     <p>
