@@ -10,7 +10,7 @@ export const MENU_ITEMS = [
         name: 'Wassersport',
         path: '/wassersport',
         items: ['Wassersportprogramm', 'Kurse'],
-        ids: ['wassersportprogram', 'kurse'],
+        ids: ['wassersportprogramm', 'kurse'],
     },
     {
         name: 'Buchen',

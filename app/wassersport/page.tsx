@@ -23,7 +23,6 @@ const page = () => {
                     </p>
                 </section>
                 <SampleCarousel />
-
                 <section id="kurse" className="scroll-padding">
                     <h2>Kursangebot</h2>
                     <p>
