@@ -149,8 +149,23 @@ const page = () => {
                     </p>
                     <p>
                         Die passende Bahnverbindung können Sie auf den Webseiten
-                        der Deutschen Bahn AG (bahn.de) oder des Hamburger
-                        Verkehrsverbundes (hvv.de) abrufen.
+                        der{' '}
+                        <a
+                            href={'https://www.bahn.de/'}
+                            target="_blank"
+                            className="text-primary-2"
+                        >
+                            Deutschen Bahn AG
+                        </a>{' '}
+                        oder des{' '}
+                        <a
+                            href={'https://www.hvv.de/de'}
+                            target="_blank"
+                            className="text-primary-2"
+                        >
+                            Hamburger Verkehrsverbundes
+                        </a>{' '}
+                        abrufen.
                     </p>
                     <div className="mt-4 min-h-96 w-full md:p-2">
                         <iframe

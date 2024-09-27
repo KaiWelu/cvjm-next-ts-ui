@@ -89,7 +89,7 @@ const MobileNav = () => {
                         </AccordionItem>
                     ))}
                 </Accordion>
-                <section className="flex flex-row items-center gap-2">
+                <section className="mt-4 flex flex-row items-start gap-5 px-2">
                     <a
                         href={'https://www.instagram.com/cvjmratzeburg/'}
                         target="_blank"

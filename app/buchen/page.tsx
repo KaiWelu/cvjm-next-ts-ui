@@ -47,7 +47,7 @@ const page = () => {
                         Enim numquam ad neque?
                     </p>
                 </section>
-                <section
+                {/*   <section
                     id="buchungskalender"
                     className="no-prose flex justify-center"
                 >
@@ -56,7 +56,7 @@ const page = () => {
                         width="600"
                         src="https://www.gruppenhaus.de/showplan.php?hs=1579"
                     ></iframe>
-                </section>
+                </section> */}
             </div>
         </main>
     )
