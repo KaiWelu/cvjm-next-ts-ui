@@ -1,21 +1,12 @@
 import MobileNav from './MobileNav'
-import DesktopNav from './DesktopNav'
-import {
-    Navbar,
-    NavbarBrand,
-    NavbarContent,
-    NavbarItem,
-    Link,
-    Button,
-} from '@nextui-org/react'
-import Image from 'next/image'
+import DesktopNavi from './DesktopNavi'
 
 const NavBarWrapper = () => {
     return (
-        <>
+        <div className="sticky top-0 z-50">
             <MobileNav />
-            {/* <DesktopNav /> */}
-        </>
+            <DesktopNavi />
+        </div>
     )
 }
 

@@ -1,6 +1,6 @@
 ## About
 
-This is a barebones template for NextJS projects. It contains the things I consider as absolute base (for now) for every further project. Includes tailwindcss for styling and playwright + vitest for testing purposes.
+This is a project for the CVJM Ratzeburg
 
 ## Tech used
 
@@ -8,7 +8,8 @@ This is a barebones template for NextJS projects. It contains the things I consi
 -   [Tailwind CSS](https://tailwindcss.com/docs/installation)
 -   [Tailwind x Prettier](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
 -   [Playwright](https://playwright.dev/docs/intro#installation)
--   [Vitest]()
+-   [Vitest](https://vitest.dev/guide/)
+-   [Splide.js](https://splidejs.com/guides/getting-started/)
 
 ## How to use
 

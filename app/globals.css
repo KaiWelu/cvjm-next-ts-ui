@@ -13,10 +13,30 @@
     body {
         @apply min-h-screen font-commissioner text-primary-1;
     }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @layer utilities {
     .text-balance {
         text-wrap: balance;
+    }
+
+    .scroll-padding {
+        scroll-margin-top: 8rem;
     }
 }

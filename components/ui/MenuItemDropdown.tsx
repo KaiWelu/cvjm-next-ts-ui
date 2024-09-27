@@ -1,3 +1,4 @@
+'use client'
 import { MenuItem } from '@/lib/types'
 import {
     Button,
@@ -5,7 +6,6 @@ import {
     DropdownItem,
     DropdownMenu,
     DropdownTrigger,
-    NavbarItem,
 } from '@nextui-org/react'
 
 const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {
@@ -17,20 +17,22 @@ const MenuItemDropdown = ({ menuItem }: { menuItem: MenuItem }) => {
             shadow="sm"
             radius="sm"
         >
-            <NavbarItem>
-                <DropdownTrigger>
-                    <Button
-                        radius="none"
-                        disableRipple={true}
-                        className="bg-transparent text-lg font-semibold text-primary-2"
-                    >
-                        {menuItem.name}
-                    </Button>
-                </DropdownTrigger>
-            </NavbarItem>
+            <DropdownTrigger>
+                <Button
+                    radius="none"
+                    disableRipple={true}
+                    className="bg-transparent text-lg font-semibold text-primary-2"
+                >
+                    {menuItem.name}
+                </Button>
+            </DropdownTrigger>
+
             <DropdownMenu color="danger">
                 {menuItem.items.map((item: string, index: number) => (
-                    <DropdownItem key={index} href="/haus">
+                    <DropdownItem
+                        href={menuItem.path + '#' + menuItem.ids[index]}
+                        key={index}
+                    >
                         {item}
                     </DropdownItem>
                 ))}
