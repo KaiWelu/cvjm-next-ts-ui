@@ -2,6 +2,15 @@
 
 This is a project for the CVJM Ratzeburg to renew their online presence. The customer wanted a modern but easy to read web presence because of the userbase. This is, as of now, just a simple landing page that gives out information about the "Segelzentrum Ratzeburg". The project is currently waiting on text content and assets from the customer. A preview is hoste [here](https://cvjm-next-ts-ui.vercel.app/)
 
+## Roadmap
+
+-   [x] layout and color scheme
+-   [x] navigation
+-   [x] image galleries
+-   [ ] content management system
+-   [ ] assets and text content from customer
+-   [ ] deployment
+
 ## Tech used
 
 -   [Next.js](https://nextjs.org/docs)
