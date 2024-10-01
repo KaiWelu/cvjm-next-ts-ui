@@ -7,6 +7,7 @@ This is a project for the CVJM Ratzeburg to renew their online presence. The cus
 -   [x] layout and color scheme
 -   [x] navigation
 -   [x] image galleries
+-   [ ] hero section
 -   [ ] content management system
 -   [ ] assets and text content from customer
 -   [ ] deployment
